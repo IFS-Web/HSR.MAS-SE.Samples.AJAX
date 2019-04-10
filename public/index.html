@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Team Counter Simple SPA</title>
+
+		<link rel="stylesheet" href="styles/main.css" type="text/css">
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+		<!-- Index View (HTML part) -->
+		<script id="index-view" type="text/x-handlebars-template">
+			<p>Your team is <strong>{{counter.team}}</strong></p>
+			<p>Your current count is <strong>{{counter.count}}</strong></p>
+			<form>
+				<button data-click="up">Count Up</button>
+			</form>
+		</script>
+
+
+		<script>
+		// REST resource
+		class CounterDataResource {
+			constructor() {
+			}
+			
+			async get(callback) {
+				const response = await fetch('/api');
+				return await response.json();
+			}
+			
+			async sendUp(callback) {
+				const response = await fetch('/api/up', { method: 'POST' });
+				return await response.json();
+			}
+		}
+		</script>
+		<script>
+		// model
+		class CounterModel {
+			constructor({team: team, count: count}) {
+				this.team = team;
+				this.count = count;
+			}
+			
+			static fromDto(dto) {
+				return new CounterModel(dto);
+			}
+		}
+		
+		// service
+		class CounterService {
+			constructor(counterDataResource) {
+				this.counterDataResource = counterDataResource;
+			}
+			
+			async load() {
+				const dto = await this.counterDataResource.get();
+				return CounterModel.fromDto(dto);
+			}
+			
+			async up() {
+				const dto = await this.counterDataResource.sendUp();
+				return CounterModel.fromDto(dto);
+			}
+		}
+		</script>
+		<script>
+		// controller
+		class IndexController {
+			constructor(counterService) {
+				this.counterService = counterService;
+				this.indexTemplateCompiled = Handlebars.compile(document.getElementById('index-view').innerHTML);
+			}
+			
+			async indexAction(viewRef) {
+				const model = await this.counterService.load();
+				this.renderIndexView(viewRef, model);
+				
+				viewRef.onclick = async (e) => {	   
+					if (e.target.dataset.click ==  'up') {
+						e.preventDefault();
+						
+						const newCount = await this.counterService.up();
+						this.renderIndexView(viewRef, newCount);
+					}
+				}
+			}
+			
+			renderIndexView(viewRef, model) {
+				viewRef.innerHTML = this.indexTemplateCompiled({ counter: model });
+			}
+		}
+		</script>
+
+		<script>
+		// bootstrapper
+		class Bootstrapper {
+			static start() {
+				document.addEventListener("DOMContentLoaded", () => {
+					new Bootstrapper().renderApp();
+				});
+			}
+			
+			constructor() {
+				this.counterResource = new CounterDataResource();
+				this.counterService = new CounterService(this.counterResource);
+				this.indexController = new IndexController(this.counterService);
+			}
+			
+			renderApp() {
+				const appContainer = document.getElementById('appContainer');
+				
+				this.indexController.indexAction(appContainer);
+			}
+		}
+		
+		Bootstrapper.start();
+		</script>
+	</head>
+	<body>
+		<h1>Team Counter Simple SPA</h1>
+		<div id="appContainer"></div>
+	</body>
+</html>
