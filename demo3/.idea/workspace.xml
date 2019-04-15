@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7556cc1-7be3-45b3-9be6-ef412e899e49" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/02_demo.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/02_demo_final.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo2/toRead.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_demo.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo6/public/demo6_1/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../documentation/screenshot.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/documentation/screenshot.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/toRead.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1_final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1_final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1_final/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1_final/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1_final/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1_final/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo1_final/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_1_final/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo2_final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_2_final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo2_final/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_2_final/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo2_final/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_2_final/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo2_final/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_2_final/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo3_final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_3_final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo3_final/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_3_final/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo3_final/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_3_final/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo3_final/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_3_final/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo4_final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_4_final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo4_final/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_4_final/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo4_final/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_4_final/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo4_final/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_4_final/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_5/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo5/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_5/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo5/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_5/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo5/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_5/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo6_final/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_final/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo6_final/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_final/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo6_final/scripts/di.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_final/scripts/di.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo6_final/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_final/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo6_final/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo6_final/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/scripts/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/scripts/bl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/scripts/di.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/scripts/di.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/scripts/dl.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/scripts/dl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/scripts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/scripts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/scripts/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/scripts/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/demo7/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/demo7/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../public/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/public/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server.js" beforeDir="false" afterPath="$PROJECT_DIR$/../demo6/server.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03_demo.mjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/03_demo.mjs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="125" />
+    <option name="width" value="1440" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="03_demo.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" node-parameters="--experimental-modules" path-to-js-file="03_demo.mjs" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.03_demo.mjs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7556cc1-7be3-45b3-9be6-ef412e899e49" name="Default Changelist" comment="" />
+      <created>1555340812531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555340812531</updated>
+      <workItem from="1555340813625" duration="191000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="191000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_demo.mjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

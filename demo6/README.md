@@ -1,6 +1,6 @@
-# HSR.Lab.Web.SimpleSPA
+# HSR.MAS-SE.Samples.AJAX
 
-A simple SPA based on Handlebars.
+Demo: A simple SPA based on Handlebars.
 
 This really simple proof of concept shows whats needed to implement a `Single Page App` without a framework like Angular or Aurelia.
 

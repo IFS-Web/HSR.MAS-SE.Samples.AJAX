@@ -1,13 +1,11 @@
 {
-  "name": "simple-spa-demo",
+  "name": "HSR.MAS-SE.Samples.AJAX_SPA-Demo",
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "wasabideveloper",
-  "license": "Apache-2.0",
   "dependencies": {
     "express": "^4.10.8",
     "express-handlebars": "^3.0.0",

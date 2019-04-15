@@ -1,7 +1,3 @@
-/**
- * Created by mstolze on 04/01/17.
- */
-
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
@@ -9,25 +5,9 @@ const expressHandlebars = require('express-handlebars');
 
 const server = express();
 
-server.use(session({	secret: 'gh45sdfgh3asd45df' }));
+server.use(session({ secret: 'gh45sdfgh3asd45df' }));
 server.engine('handlebars', expressHandlebars());
 server.set('view engine', 'handlebars');
-
-// Routes requried for DEMO2
-server.use('/demo2/welcome/*', function(req, res, next) {
-    res.sendFile(path.join(__dirname, 'public/demo2'));
-});
-server.use('/demo2/welcome', function(req, res, next) {
-    res.sendFile(path.join(__dirname, 'public/demo2/index.html'));
-});
-
-server.use('/demo2_final/welcome/*', function(req, res, next) {
-    res.sendFile(path.join(__dirname, 'public/demo2_final'));
-});
-server.use('/demo2_final/welcome', function(req, res, next) {
-    res.sendFile(path.join(__dirname, 'public/demo2_final/index.html'));
-});
-
 
 server.use('/', express.static(path.join(__dirname, 'public')));
 
