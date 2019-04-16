@@ -1,6 +1,11 @@
-(function(bl) {
-	
-	// TODO: Add logic here...
-    // exports can be accomplished with [bl.something = myFunction;]
+// TODO: demo 2, MVC
+class CounterModel {
+    constructor(team, count) {
+        this.team = team || 'unspecified';
+        this.count = count || 0;
+    }
 
-})(window.bl = window.bl || {});
+    static fromDto(dto) {
+        return new CounterModel(dto.team, dto.count);
+    }
+}

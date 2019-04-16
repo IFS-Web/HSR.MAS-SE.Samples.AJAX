@@ -1,19 +1,20 @@
-// TODO: demo 2, MVC
 class IndexController {
-    constructor() {
+    constructor(counterService) {
+        this.counterService = counterService;
         this.indexTemplateCompiled = Handlebars.compile(document.getElementById('index-view').innerHTML);
     }
 
-    indexAction(viewRef) {
-        const model = new CounterModel();
+    async indexAction(viewRef) {
+        const model = await this.counterService.load();
         this.renderIndexView(viewRef, model);
 
-        viewRef.onclick = (e) => {
+        viewRef.onclick = async (e) => {
             if (e.target.dataset.click === 'up') {
                 e.preventDefault();
 
                 model.count++;
-                this.renderIndexView(viewRef, model);
+                const newCount = await this.counterService.up();
+                this.renderIndexView(viewRef, newCount);
             }
         }
     }

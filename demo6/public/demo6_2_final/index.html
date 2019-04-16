@@ -7,7 +7,6 @@
 		<link rel="stylesheet" href="../styles/main.css" type="text/css">
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 		<script src="scripts/ui.js"></script>
 		<script src="scripts/bl.js"></script>
@@ -22,23 +21,25 @@
 		</script>
 
 		<script>
-			// bootstrap
-			(function($) {
-                let router = new ui.Router({ /* DEMO2 */
-                    rootPath: "/demo2_final/",
-                    initialRoute: "index",
-                    routes: {
-                        "index": () => { console.log("Invoke Index here..."); },
-                        "welcome": () => { console.log("Invoke Welcome here..."); }
-                    }
-                });
+			class Bootstrapper {
+				static start() {
+					// TODO: demo 2
+					document.addEventListener("DOMContentLoaded", () => {
+						new Bootstrapper().renderApp();
+					});
+				}
 
-			    $(function() {
-					router.initialize(); /* DEMO2 */
-					//router.navigate("welcome");
-				});
-			})(jQuery);
+				constructor() {  // TODO: demo 2
+					this.indexController = new IndexController();
+				}
 
+				renderApp() {  // TODO: demo 2
+					const appContainer = document.getElementById('appContainer');
+					this.indexController.indexAction(appContainer);
+				}
+			}
+
+			Bootstrapper.start();
 		</script>
 	</head>
 	<body>

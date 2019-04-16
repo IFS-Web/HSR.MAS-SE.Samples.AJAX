@@ -1,7 +1,4 @@
-(function(dl) {
-	
-	// TODO: Add logic here...
-    console.log('dl ' + dl);
-    // exports can be accomplished with [dl.something = myFunction;]
+// TODO: Add logic here...
+console.log('Data Logic');
 
-})(window.dl = window.dl || {});
+// class CounterDataResource { }

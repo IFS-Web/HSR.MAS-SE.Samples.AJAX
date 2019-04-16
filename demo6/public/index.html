@@ -24,12 +24,12 @@
 			constructor() {
 			}
 			
-			async get(callback) {
+			async get() {
 				const response = await fetch('/api');
 				return await response.json();
 			}
 			
-			async sendUp(callback) {
+			async sendUp() {
 				const response = await fetch('/api/up', { method: 'POST' });
 				return await response.json();
 			}
@@ -38,13 +38,13 @@
 		<script>
 		// model
 		class CounterModel {
-			constructor({team: team, count: count}) {
-				this.team = team;
-				this.count = count;
+			constructor(team, count) {
+				this.team = team || 'unspecified';
+				this.count = count || 0;
 			}
-			
+
 			static fromDto(dto) {
-				return new CounterModel(dto);
+				return new CounterModel(dto.team, dto.count);
 			}
 		}
 		
@@ -78,7 +78,7 @@
 				this.renderIndexView(viewRef, model);
 				
 				viewRef.onclick = async (e) => {	   
-					if (e.target.dataset.click ==  'up') {
+					if (e.target.dataset.click === 'up') {
 						e.preventDefault();
 						
 						const newCount = await this.counterService.up();

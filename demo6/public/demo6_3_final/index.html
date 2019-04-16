@@ -22,22 +22,25 @@
 		</script>
 
 		<script>
-			// bootstrap
-			(function($) {
-			    $(function() { /* DEMO3 */
-                    let controller = new ui.CounterController(); /* DEMO3 */
+			class Bootstrapper {
+				static start() {
+					document.addEventListener("DOMContentLoaded", () => {
+						new Bootstrapper().renderApp();
+					});
+				}
 
-                    let routerOutlet = $("#appContainer"); /* DEMO3 */
-                    let router = new ui.Router({
-                        rootPath: "/demo3_final/",
-                        initialRoute: "index",
-                        routes: {
-                            "index": () => { controller.indexAction(routerOutlet); /* DEMO3 */ }
-                        }
-                    });
-                    router.initialize();
-				});
-			})(jQuery);
+				constructor() {  // TODO: demo 3
+					this.counterService = new CounterService();
+					this.indexController = new IndexController(this.counterService);
+				}
+
+				renderApp() {
+					const appContainer = document.getElementById('appContainer');
+					this.indexController.indexAction(appContainer);
+				}
+			}
+
+			Bootstrapper.start();
 
 		</script>
 	</head>

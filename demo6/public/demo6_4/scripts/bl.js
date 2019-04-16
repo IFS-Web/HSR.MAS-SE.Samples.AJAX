@@ -4,7 +4,6 @@ class CounterModel {
         this.count = count || 0;
     }
 
-    // TODO: demo 3
     static fromDto(dto) {
         return new CounterModel(dto.team, dto.count);
     }
@@ -12,19 +11,19 @@ class CounterModel {
 
 
 /**
- * demo 3 - Business Logic Services
+ * Business Logic Services
  *
  * CounterService is currently a fake service.
  */
 class CounterService {
-    constructor() {
+    constructor() {  // TODO: demo 4
         this.dto = { team: "", count: 0 }; // example; usually received from server
     }
-    load() {
+    load() {  // TODO: demo 4
         return new Promise(
             (resolve) => resolve(CounterModel.fromDto(this.dto)));
     }
-    up() {
+    up() {  // TODO: demo 4
         this.dto.count++;
         return new Promise(
             (resolve) => resolve(CounterModel.fromDto(this.dto)));

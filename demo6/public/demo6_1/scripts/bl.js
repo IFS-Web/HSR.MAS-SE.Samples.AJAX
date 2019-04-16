@@ -1,7 +1,4 @@
-(function(bl) {
-	
-	// TODO: Add logic here...
-	console.log('bl ' + bl);
-    // exports can be accomplished with [bl.something = myFunction;]
+// TODO: Add logic here...
+console.log('Business Logic');
 
-})(window.bl = window.bl || {});
+// class CounterDataResource { }
