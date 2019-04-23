@@ -1,14 +1,10 @@
 const express = require('express');
 const path = require('path');
 const session = require('express-session');
-const expressHandlebars = require('express-handlebars');
 
 const server = express();
 
-server.use(session({ secret: 'gh45sdfgh3asd45df' }));
-server.engine('handlebars', expressHandlebars());
-server.set('view engine', 'handlebars');
-
+server.use(session({ secret: 'gh45sdfgh3asd45df', resave: true, saveUninitialized: true }));
 server.use('/', express.static(path.join(__dirname, 'public')));
 
 
